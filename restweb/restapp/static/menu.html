@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - ST Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #111;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header .logo img {
+      width: 40px;
+      height: 40px;
+    }
+
+    header .logo h1 {
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #f1c40f;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 60px;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .hero-text .btn {
+      background: #f1c40f;
+      color: black;
+      padding: 12px 25px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .hero-images {
+      display: flex;
+      gap: 20px;
+    }
+
+    .hero-images img {
+      width: 220px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+  </style>
+  <style>
+    .menu-section {
+      padding: 60px;
+      text-align: center;
+    }
+
+    .menu-section h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: #f1c40f;
+    }
+
+    .menu-section p {
+      font-size: 16px;
+      margin-bottom: 40px;
+      color: #ddd;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .menu-card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .menu-card img {
+      width: 200px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 2px solid #f1c40f;
+    }
+
+    .menu-card h3 {
+      margin: 10px 0 5px;
+      color: #fff;
+    }
+
+    .menu-card p {
+      font-size: 14px;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu Section -->
+  <section class="menu-section">
+    <h1>Our Menu</h1>
+    <p>Explore our delicious range of International and Indian cuisines.</p>
+
+    <div class="menu-grid">
+      <!-- International Cuisine -->
+      <div class="menu-card">
+        <img src="c:\Users\acer\OneDrive\Pictures\img 1.jpg" alt="Pizza">
+        <h3>Italian Pizza</h3>
+        <p>Classic wood-fired pizza with mozzarella & basil.</p>
+      </div>
+
+      <div class="menu-card">
+        <img src="c:\Users\acer\OneDrive\Pictures\image 2.jpg" alt="Pasta">
+        <h3>Spaghetti Pasta</h3>
+        <p>Authentic spaghetti with creamy Alfredo sauce.</p>
+      </div>
+
+      <div class="menu-card">
+        <img src="c:\Users\acer\OneDrive\Pictures\image 3.jpg" alt="Burger">
+        <h3>Cheese Burger</h3>
+        <p>Juicy grilled beef patty with cheddar & lettuce.</p>
+      </div>
+
+      <div class="menu-card">
+        <img src="c:\Users\acer\OneDrive\Pictures\image 4.jpg" alt="Sushi">
+        <h3>Japanese Sushi</h3>
+        <p>Fresh sushi rolls with salmon and avocado.</p>
+      </div>
+
+      <div class="menu-card">
+        <img src="c:\Users\acer\OneDrive\Pictures\image 5.jpg" alt="Steak">
+        <h3>Grilled Steak</h3>
+        <p>Perfectly grilled steak with garlic butter.</p>
+      </div>
+
+      <!-- Indian Cuisine -->
+      <div class="menu-card">
+        <img src="c:\Users\acer\OneDrive\Pictures\image 6.jpg" alt="Biryani">
+        <h3>Hyderabadi Biryani</h3>
+        <p>Spiced rice with tender chicken & herbs.</p>
+      </div>
+
+      <div class="menu-card">
+        <img src="c:\Users\acer\OneDrive\Pictures\image 7.jpg" alt="Butter Chicken">
+        <h3>Butter Chicken</h3>
+        <p>Creamy tomato gravy with succulent chicken.</p>
+      </div>
+
+      <div class="menu-card">
+        <img src="c:\Users\acer\OneDrive\Pictures\image 8.jpg" alt="Dosa">
+        <h3>Masala Dosa</h3>
+        <p>Crispy dosa stuffed with spiced potato filling.</p>
+      </div>
+
+      <div class="menu-card">
+        <img src="c:\Users\acer\OneDrive\Pictures\image 9.jpg" alt="Paneer">
+        <h3>Paneer Tikka</h3>
+        <p>Grilled cottage cheese with smoky spices.</p>
+      </div

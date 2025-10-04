@@ -143,7 +143,7 @@ home.html
   <header>
     <div class="logo">
       <img src="c:\Users\acer\OneDrive\Pictures\restaurant.jpg" alt="Logo">
-      <h1> ST RESTAURANT color="yellow"</h1> 
+      <h1> ST RESTAURANT </h1> 
     </div>
     <nav>
       <ul>
